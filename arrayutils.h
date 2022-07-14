@@ -14,7 +14,7 @@
     keep = !keep, count++) \
     for(item = (array) + count; keep; keep = !keep)
     
-    //pesquisa um valor no vetor, se encontrado, retorna a posição        
+    //search for a value inside an array, return the position number       
     extern int searchInt(int*, int, int);
     extern float searchFloat(float*, int, float);
     extern double searchDouble(double*, int, double);
