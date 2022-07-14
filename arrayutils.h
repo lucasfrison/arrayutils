@@ -19,9 +19,11 @@
     extern float searchFloat(float*, int, float);
     extern double searchDouble(double*, int, double);
     
-        
-
-
+    //bubble sorts
+    void bubbleSortInt(int*, int);
+    void bubbleSortFloat(float*, int);
+    void bubbleSortDouble(double*, int);   
+         
 #endif
 
 
