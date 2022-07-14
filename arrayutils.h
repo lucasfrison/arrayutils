@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 #ifndef ARRAYUTILS_H
 #define ARRAYUTILS_H
 
