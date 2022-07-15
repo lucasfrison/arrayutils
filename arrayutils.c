@@ -1,6 +1,7 @@
 #include "arrayutils.h"
 
-int searchInt(int *arr, int size, int key) {
+int searchInt(int *arr, int key) {
+    int size = length(arr);
     for (int i = 0; i < size; i++) {
         if (arr[i] == key)
             return i;		 
@@ -8,7 +9,8 @@ int searchInt(int *arr, int size, int key) {
     return -1;          
 }
 
-float searchFloat(float *arr, int size, float key) {
+float searchFloat(float *arr, float key) {
+    int size = length(arr);
     for (int i = 0; i < size; i++) {
         if (arr[i] == key)
             return i;		 
@@ -16,7 +18,8 @@ float searchFloat(float *arr, int size, float key) {
     return -1;          
 }
 
-double searchDouble(double *arr, int size, double key) {
+double searchDouble(double *arr, double key) {
+    int size = length(arr);
     for (int i = 0; i < size; i++) {
         if (arr[i] == key)
             return i;		 
@@ -24,7 +27,8 @@ double searchDouble(double *arr, int size, double key) {
     return -1;          
 }
 
-void bubbleSortInt(int *arr, int size) {    
+void bubbleSortInt(int *arr) {    
+    int size = length(arr);
     for(int x = 0; x < size - 1; x++){       
         for(int y = 0; y < size - x - 1; y++){          
             if(arr[y] > arr[y + 1]){               
@@ -36,7 +40,8 @@ void bubbleSortInt(int *arr, int size) {
     }
 }    
 
-void bubbleSortFloat(float *arr, int size) {    
+void bubbleSortFloat(float *arr) {    
+    int size = length(arr);
     for(int x = 0; x < size - 1; x++){       
         for(int y = 0; y < size - x - 1; y++){          
             if(arr[y] > arr[y + 1]){               
@@ -48,7 +53,8 @@ void bubbleSortFloat(float *arr, int size) {
     }
 }
 
-void bubbleSortDouble(double *arr, int size) {    
+void bubbleSortDouble(double *arr) {  
+    int size = length(arr);
     for(int x = 0; x < size - 1; x++){       
         for(int y = 0; y < size - x - 1; y++){          
             if(arr[y] > arr[y + 1]){               
