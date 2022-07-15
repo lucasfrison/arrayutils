@@ -28,14 +28,14 @@
     extern double searchDouble(double*, double);
     
     //bubble sorts para arrays unidimenssionais
-    void bubbleSortInt(int*);
-    void bubbleSortFloat(float*);
-    void bubbleSortDouble(double*); 
+    extern void bubbleSortInt(int*);
+    extern void bubbleSortFloat(float*);
+    extern void bubbleSortDouble(double*); 
 
     //quick sorts para arrays unidimenssionais
-    void quickSortInt(int*);
-    void quickSortFloat(float*);
-    void quickSortDouble(double*);
+    extern void quickSortInt(int*, int, int);
+    extern void quickSortFloat(float*, int, int);
+    extern void quickSortDouble(double*, int, int);
          
 #endif
 
