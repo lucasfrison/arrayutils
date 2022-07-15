@@ -30,7 +30,12 @@
     //bubble sorts para arrays unidimenssionais
     void bubbleSortInt(int*);
     void bubbleSortFloat(float*);
-    void bubbleSortDouble(double*);   
+    void bubbleSortDouble(double*); 
+
+    //quick sorts para arrays unidimenssionais
+    void quickSortInt(int*);
+    void quickSortFloat(float*);
+    void quickSortDouble(double*);
          
 #endif
 
