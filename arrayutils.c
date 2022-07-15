@@ -27,8 +27,7 @@ double searchDouble(double *arr, double key) {
     return -1;          
 }
 
-void bubbleSortInt(int *arr) {    
-    int size = length(arr);
+void bubbleSortInt(int *arr, int size) {    
     for (int x = 0; x < size - 1; x++) {       
         for (int y = 0; y < size - x - 1; y++) {          
             if (arr[y] > arr[y + 1]){               
@@ -40,8 +39,7 @@ void bubbleSortInt(int *arr) {
     }
 }    
 
-void bubbleSortFloat(float *arr) {    
-    int size = length(arr);
+void bubbleSortFloat(float *arr, int size) {    
     for (int x = 0; x < size - 1; x++) {       
         for (int y = 0; y < size - x - 1; y++) {          
             if (arr[y] > arr[y + 1]) {               
@@ -53,8 +51,7 @@ void bubbleSortFloat(float *arr) {
     }
 }
 
-void bubbleSortDouble(double *arr) {  
-    int size = length(arr);
+void bubbleSortDouble(double *arr, int size) {  
     for (int x = 0; x < size - 1; x++) {       
         for (int y = 0; y < size - x - 1; y++) {          
             if (arr[y] > arr[y + 1]) {               

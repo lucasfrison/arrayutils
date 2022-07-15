@@ -28,9 +28,9 @@
     extern double searchDouble(double*, double);
     
     //bubble sorts para arrays unidimenssionais
-    extern void bubbleSortInt(int*);
-    extern void bubbleSortFloat(float*);
-    extern void bubbleSortDouble(double*); 
+    extern void bubbleSortInt(int*, int);
+    extern void bubbleSortFloat(float*, int);
+    extern void bubbleSortDouble(double*, int); 
 
     //quick sorts para arrays unidimenssionais
     extern void quickSortInt(int*, int, int);
