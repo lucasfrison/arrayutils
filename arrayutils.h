@@ -27,9 +27,9 @@
     for(item = (array) + count; keep; keep = !keep)
     
     //algoritmos de pesquisa       
-    extern int searchInt(int*, int);
-    extern float searchFloat(float*, float);
-    extern double searchDouble(double*, double);
+    extern int searchInt(int *arr, int size, int key);
+    extern float searchFloat(float *arr, int size, float key);
+    extern double searchDouble(double *arr, int size, double key);
     
     /*algoritmos de leitura,
     utilizar free(nome_array) após a execução*/
@@ -39,21 +39,26 @@
 
     //bubble sorts para arrays unidimenssionais
     //para matriz usar dentro de um for
-    extern void bubbleSortInt(int*, int);
-    extern void bubbleSortFloat(float*, int);
-    extern void bubbleSortDouble(double*, int); 
+    extern void bubbleSortInt(int *arr, int size);
+    extern void bubbleSortFloat(float *arr, int size);
+    extern void bubbleSortDouble(double *arr, int size); 
 
     //quick sorts para arrays unidimenssionais
     //para matriz usar dentro de um for
-    extern void quickSortInt(int*, int, int);
-    extern void quickSortFloat(float*, int, int);
-    extern void quickSortDouble(double*, int, int);
+    extern void quickSortInt(int *arr, int first, int last);
+    extern void quickSortFloat(float *arr, int first, int last);
+    extern void quickSortDouble(double *arr, int first, int last);
          
     //imprimir array unidimensional
     //para matriz usar dentro de um for
-    extern void printIntArray(int*, int);
-    extern void printFloatArray(float*, int);
-    extern void printDoubleArray(double*, int);
+    extern void printIntArray(int *arr, int size);
+    extern void printFloatArray(float *arr, int size);
+    extern void printDoubleArray(double *arr, int size);
+    
+    //substiruir itens no array
+    extern int updateIntArray(int *arr, int size, int in, int out);
+    extern int updateFloatArray(float *arr, int size, float in, float out);
+    extern int updateDoubleArray(double *arr, int size, double in, double out);
 
 #endif
 
