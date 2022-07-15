@@ -27,6 +27,42 @@ double searchDouble(double *arr, double key) {
     return -1;          
 }
 
+int* readIntArray(int size) {
+    char input[10];
+    int *arr = malloc(size * sizeof(int));
+    printf("Entre com %d números:\n", size);
+    for (int i = 0; i < size; i++) {
+    	printf("\nNúmero %d: ", i + 1);
+	scanf("%s", input);    //ler como string impede erros
+        arr[i] = atoi(input);  //digitou "a", atribui arr[i] = 0
+    }
+    return arr;
+}
+
+float* readFloatArray(int size) {
+    char input[10];
+    float *arr = malloc(size * sizeof(float));
+    printf("Entre com %d números:\n", size);
+    for (int i = 0; i < size; i++) {
+    	printf("\nNúmero %d: ", i + 1);
+	scanf("%s", input);   //ler como string impede erros
+        arr[i] = atoi(input); //digitou "a", atribui arr[i] = 0
+    }
+    return arr;
+}
+
+double* readDoubleArray(int size) {
+    char input[10];
+    double *arr = malloc(size * sizeof(double));
+    printf("Entre com %d números:\n", size);
+    for (int i = 0; i < size; i++) {
+    	printf("\nNúmero %d: ", i + 1);
+	scanf("%s", input);     //ler como string impede erros
+        arr[i] = atoi(input);   //digitou "a", atribui arr[i] = 0
+    }
+    return arr;
+}
+
 void bubbleSortInt(int *arr, int size) {    
     for (int x = 0; x < size - 1; x++) {       
         for (int y = 0; y < size - x - 1; y++) {          
@@ -149,17 +185,17 @@ void quickSortDouble(double *arr, int first, int last) {
 
 void printIntArray(int *arr, int size) {
     for (int i = 0; i < size; i++)
-        printf("%d ", arr[i]);       
+        printf("\nPosição %d: %d", i, arr[i]);       
 } 
 
 void printFloatArray(float *arr, int size) {
     for (int i = 0; i < size; i++)
-        printf("%.2f ", arr[i]);
+        printf("\nPosição %d: %.2f ", i, arr[i]);
 } 
 
 void printDoubleArray(double *arr, int size) {
     for (int i = 0; i < size; i++)
-        printf("%.2f ", arr[i]);
+        printf("\nPosição %d: %.2f ", i, arr[i]);
 } 
 
 

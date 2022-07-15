@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 #ifndef ARRAYUTILS_H
 #define ARRAYUTILS_H
 
@@ -28,6 +31,12 @@
     extern float searchFloat(float*, float);
     extern double searchDouble(double*, double);
     
+    /*algoritmos de leitura,
+    utilizar free(nome_array) após a execução*/
+    extern int* readIntArray(int size);
+    extern float* readFloatArray(int size);
+    extern double* readDoubleArray(int size);
+
     //bubble sorts para arrays unidimenssionais
     //para matriz usar dentro de um for
     extern void bubbleSortInt(int*, int);
