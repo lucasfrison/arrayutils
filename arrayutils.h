@@ -27,7 +27,7 @@
     extern float searchFloat(float*, int, float);
     extern double searchDouble(double*, int, double);
     
-    //bubble sorts
+    //bubble sorts para arrays unidimenssionais
     void bubbleSortInt(int*, int);
     void bubbleSortFloat(float*, int);
     void bubbleSortDouble(double*, int);   
