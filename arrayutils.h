@@ -1,3 +1,4 @@
+#include <stdio.h>
 #ifndef ARRAYUTILS_H
 #define ARRAYUTILS_H
 
@@ -28,15 +29,23 @@
     extern double searchDouble(double*, double);
     
     //bubble sorts para arrays unidimenssionais
+    //para matriz usar dentro de um for
     extern void bubbleSortInt(int*, int);
     extern void bubbleSortFloat(float*, int);
     extern void bubbleSortDouble(double*, int); 
 
     //quick sorts para arrays unidimenssionais
+    //para matriz usar dentro de um for
     extern void quickSortInt(int*, int, int);
     extern void quickSortFloat(float*, int, int);
     extern void quickSortDouble(double*, int, int);
          
+    //imprimir array unidimensional
+    //para matriz usar dentro de um for
+    extern void printIntArray(int*, int);
+    extern void printFloatArray(float*, int);
+    extern void printDoubleArray(double*, int);
+
 #endif
 
 

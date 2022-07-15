@@ -147,4 +147,19 @@ void quickSortDouble(double *arr, int first, int last) {
    }
 }
 
+void printIntArray(int *arr, int size) {
+    for (int i = 0; i < size; i++)
+        printf("%d ", arr[i]);       
+} 
+
+void printFloatArray(float *arr, int size) {
+    for (int i = 0; i < size; i++)
+        printf("%.2f ", arr[i]);
+} 
+
+void printDoubleArray(double *arr, int size) {
+    for (int i = 0; i < size; i++)
+        printf("%.2f ", arr[i]);
+} 
+
 
