@@ -23,14 +23,14 @@
     for(item = (array) + count; keep; keep = !keep)
     
     //algoritmos de pesquisa       
-    extern int searchInt(int*, int, int);
-    extern float searchFloat(float*, int, float);
-    extern double searchDouble(double*, int, double);
+    extern int searchInt(int*, int);
+    extern float searchFloat(float*, float);
+    extern double searchDouble(double*, double);
     
     //bubble sorts para arrays unidimenssionais
-    void bubbleSortInt(int*, int);
-    void bubbleSortFloat(float*, int);
-    void bubbleSortDouble(double*, int);   
+    void bubbleSortInt(int*);
+    void bubbleSortFloat(float*);
+    void bubbleSortDouble(double*);   
          
 #endif
 
