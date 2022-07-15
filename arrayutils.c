@@ -30,7 +30,7 @@ int* readIntArray(int size) {
     printf("Entre com %d números:\n", size);
     for (int i = 0; i < size; i++) {
     	printf("\nNúmero %d: ", i + 1);
-	scanf("%s", input);    //ler como string impede erros
+		scanf("%s", input);    //ler como string impede erros
         arr[i] = atoi(input);  //digitou "a", atribui arr[i] = 0
     }
     return arr;
@@ -42,7 +42,7 @@ float* readFloatArray(int size) {
     printf("Entre com %d números:\n", size);
     for (int i = 0; i < size; i++) {
     	printf("\nNúmero %d: ", i + 1);
-	scanf("%s", input);   //ler como string impede erros
+		scanf("%s", input);   //ler como string impede erros
         arr[i] = atoi(input); //digitou "a", atribui arr[i] = 0
     }
     return arr;
@@ -54,7 +54,7 @@ double* readDoubleArray(int size) {
     printf("Entre com %d números:\n", size);
     for (int i = 0; i < size; i++) {
     	printf("\nNúmero %d: ", i + 1);
-	scanf("%s", input);     //ler como string impede erros
+		scanf("%s", input);     //ler como string impede erros
         arr[i] = atoi(input);   //digitou "a", atribui arr[i] = 0
     }
     return arr;
