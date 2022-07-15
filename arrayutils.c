@@ -66,17 +66,15 @@ void bubbleSortDouble(double *arr) {
     }
 }
 
-void quickSortInt(int *arr) {
+void quickSortInt(int *arr, int first, int last) {
     
    int i, j, pivot, temp;
-   int last = length(arr);
-   int first = arr[0]; 
     
    if(first < last){
        
-      pivot=first;
-      i=first;
-      j=last;
+      pivot = first;
+      i = first;
+      j = last;
        
       while(i<j){
          while(arr[i] <= arr[pivot] && i < last) i++;
@@ -91,22 +89,20 @@ void quickSortInt(int *arr) {
       temp = arr[pivot];
       arr[pivot] = arr[j];
       arr[j] = temp;
-      quicksort(arr, first, j - 1);
-      quicksort(arr, j + 1, last);
+      quickSortInt(arr, first, j - 1);
+      quickSortInt(arr, j + 1, last);
    }
 }
 
-void quickSortFloat(int *arr) {
+void quickSortFloat(float *arr, int first, int last) {
     
    int i, j, pivot, temp;
-   int last = length(arr);
-   int first = arr[0]; 
     
    if(first < last){
        
-      pivot=first;
-      i=first;
-      j=last;
+      pivot = first;
+      i = first;
+      j = last;
        
       while(i<j){
          while(arr[i] <= arr[pivot] && i < last) i++;
@@ -121,22 +117,20 @@ void quickSortFloat(int *arr) {
       temp = arr[pivot];
       arr[pivot] = arr[j];
       arr[j] = temp;
-      quicksort(arr, first, j - 1);
-      quicksort(arr, j + 1, last);
+      quickSortFloat(arr, first, j - 1);
+      quickSortFloat(arr, j + 1, last);
    }
 }
 
-void quickSortDouble(int *arr) {
+void quickSortDouble(double *arr, int first, int last) {
     
    int i, j, pivot, temp;
-   int last = length(arr);
-   int first = arr[0]; 
     
    if(first < last){
        
-      pivot=first;
-      i=first;
-      j=last;
+      pivot = first;
+      i = first;
+      j = last;
        
       while(i<j){
          while(arr[i] <= arr[pivot] && i < last) i++;
@@ -151,8 +145,8 @@ void quickSortDouble(int *arr) {
       temp = arr[pivot];
       arr[pivot] = arr[j];
       arr[j] = temp;
-      quicksort(arr, first, j - 1);
-      quicksort(arr, j + 1, last);
+      quickSortDouble(arr, first, j - 1);
+      quickSortDouble(arr, j + 1, last);
    }
 }
 
