@@ -196,39 +196,39 @@ void printDoubleArray(double *arr, int size) {
 } 
 
 int updateIntArray(int *arr, int size, int in, int out) {
-	int replaced = 0;
-	for (int i = 0; i < size; i++) {
-		if (arr[i] == out) {
-			arr[i] = in;
-			replaced++;
-		}
-	}	
+    int replaced = 0;
+    for (int i = 0; i < size; i++) {
+        if (arr[i] == out) {
+	arr[i] = in;
+	replaced++;
+	}
+    }	
 	
-	return replaced;		
+    return replaced;		
 }
 
 int updateFloatArray(float *arr, int size, float in, float out) {
-	int replaced = 0;
-	for (int i = 0; i < size; i++) {
-		if (arr[i] == out) {
-			arr[i] = in;
-			replaced++;
-		}
-	}	
-	
-	return replaced;		
+    int replaced = 0;
+    for (int i = 0; i < size; i++) {
+        if (arr[i] == out) {
+       	    arr[i] = in;
+	    replaced++;
+	}
+    }	
+ 	
+    return replaced;		
 }
 
 int updateDoubleArray(double *arr, int size, double in, double out) {
-	int replaced = 0;
-	for (int i = 0; i < size; i++) {
-		if (arr[i] == out) {
-			arr[i] = in;
-			replaced++;
-		}
+    int replaced = 0;
+    for (int i = 0; i < size; i++) {
+        if (arr[i] == out) {
+	    arr[i] = in;
+	    replaced++;
 	}
+    }
 	
-	return replaced;		
+    return replaced;		
 }
 
 
